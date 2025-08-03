@@ -37,7 +37,7 @@ a {
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.67;
+  /* line-height: 1.67; */
 }
 
 .btn:hover {
@@ -97,4 +97,77 @@ a {
 
 .header__action__login {
   margin-right: 7px;
+}
+
+/* ========================= hero =========================== */
+.hero {
+  padding-top: 76px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+  /* 517 / 1170   * 100 = 44% */
+  width: 44%;
+}
+
+.hero__media {
+  /* Chiếm đều không gian còn lại (so với các phần tử khác có flex)
+     Tự động co giãn theo kích thước của container
+     Không cần set width cụ thể → rất linh hoạt khi làm layout */
+  flex: 1;
+}
+
+.hero__heading {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.14; /* 114.286% */
+  letter-spacing: -1.4px;
+}
+
+.hero__desc {
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.66; /* 166.667% */
+  margin-top: 22px;
+}
+
+.hero__row {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.hero__phone {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.66; /* 166.667% */
+}
+
+.hero__images {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero__img {
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.hero__img--large {
+  width: 330px;
+  height: 540px;
+  margin-right: -6px;
+  z-index: 1;
+}
+
+.hero__img--small {
+  width: 210px;
+  height: 410px;
 }
