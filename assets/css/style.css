@@ -536,7 +536,7 @@ a {
 }
 
 .blog__heading {
-  min-width: 470px;
+  max-width: 470px;
 }
 
 .blog__more {
@@ -567,7 +567,7 @@ a {
   border: 1px solid #e8ebee;
   background: #fff;
   overflow: hidden;
-  transition: 0.25s;
+  transition: 0.5s;
 }
 
 .blog-item:hover {
@@ -621,4 +621,33 @@ a {
   font-weight: 400;
   margin-top: 10px;
   display: inline-block;
+}
+
+/* ============= appointment ============= */
+.appointment {
+  margin: 85px 0;
+}
+
+.appointment__inner {
+  text-align: center;
+  padding: 100px 178px;
+  background: #f6fbff;
+}
+
+.appointment__heading::after {
+  content: " ";
+  display: block;
+  width: 136px;
+  height: 2px;
+  background: #2e80ce;
+  margin: 18px auto 0;
+}
+
+.appointment_desc {
+  max-width: 617px;
+  margin: 18px auto 0;
+}
+
+.appointment-btn {
+  margin-top: 38px;
 }
